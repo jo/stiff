@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>STIFF: Clients</title>
+
+    <script src="../javascripts/jquery.pack9857.js?1277818974" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+jQuery.noConflict();
+//]]>
+</script>
+    <script src="../javascripts/flashembed.min9857.js?1277818974" type="text/javascript"></script>
+    <script src="../javascripts/flow.embed9857.js?1277818974" type="text/javascript"></script>
+    <script src="../javascripts/audio-player9857.js?1277818974" type="text/javascript"></script>
+    <script src="../javascripts/prototype9857.js?1277818974" type="text/javascript"></script>
+<script src="../javascripts/effects9857.js?1277818974" type="text/javascript"></script>
+<script src="../javascripts/dragdrop9857.js?1277818974" type="text/javascript"></script>
+<script src="../javascripts/controls9857.js?1277818974" type="text/javascript"></script>
+<script src="../javascripts/application9857.js?1277818974" type="text/javascript"></script>
+    
+    
+    
+
+    
+    <link href="../stylesheets/scaffold9857.css?1277818974" media="screen" rel="stylesheet" type="text/css" />
+
+    <style xml:space="preserve" type="text/css">
+
+  html {
+    height: 100%;
+  }
+  body {
+    background: white;
+  }
+  #sidebar_right {
+    float: right;
+  }
+  #sidebar_left {
+    float: left;
+  }
+  #footer {
+    clear: both;
+  }
+  body {
+  background-color: parent;
+  background-image: none;
+  background-repeat: repeat-x;
+  background-position: 0px 0px;
+  color: black;
+  text-align: center;
+}
+#main {
+  height: auto;
+  width: auto;
+  border-bottom: 0px solid #DDDDDD;
+  border-right: 0px solid #DDDDDD;
+  color: black;
+  border-left: 0px solid #DDDDDD;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: 0px 0px;
+  font-size: 6pt;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  font-family: sans-serif;
+  margin-right: 0px;
+  border-top: 0px solid #DDDDDD;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+#header {
+  height: auto;
+  width: auto;
+  font-size: 12pt;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-right: 60px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+  margin-bottom: 0px;
+  border-top: 0px solid black;
+  border-right: 0px solid black;
+  border-left: 0px solid black;
+  background-color: white;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: 0px 0px;
+  border-bottom: 0px solid black;
+  color: black;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  font-family: sans-serif serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif;
+  text-align: center;
+}
+#content {
+  height: auto;
+  width: autopx;
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 0px;
+  min-height: autopx;
+  padding-top: 35px;
+  margin-right: 0px;
+  padding-bottom: 30px;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding-right: 60px;
+  border-bottom: 0px dotted #DDDDDD;
+  padding-left: 60px;
+  background-color: trans;
+  border-right: 0px solid black;
+  background-repeat: repeat;
+  border-left: 0px solid black;
+  border-top: 0px solid #DDDDDD;
+  background-image: url(/image_content/value/5721/1910-STIFF-GIF-FINAL-02.gif);
+  background-position: 0px 0px;
+  font-variant: normal;
+  color: black;
+  font-family: sans-serif sans-serif;
+  font-weight: normal;
+  min-width: 1000;
+  font-style: normal;
+}
+#content div.image_content {
+  display: inline;
+}
+#sidebar_right {
+  display: inline;
+  height: 20;
+  font-style: normal;
+  border-top: 0px solid #DDDDDD;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-right: 0px solid #FFFF00;
+  border-bottom: 3px solid #DDDDDD;
+  margin-left: 0%;
+  padding-top: 0px;
+  color: black;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: 0px 0px;
+  font-size: 12pt;
+  margin-top: 0px;
+  border-left: 0px solid #FFFF00;
+  background-color: trans;
+  margin-right: 0px;
+  font-family: sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif sans-serif;
+  text-align: left;
+  width: autopx;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-variant: normal;
+}
+#sidebar_left {
+  display: inline;
+  height: 0px;
+  font-style: normal;
+  border-top: 0px solid #DDDDDD;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  border-right: 0px solid #DDDDDD;
+  border-bottom: 0px solid #DDDDDD;
+  margin-left: 0px;
+  padding-top: 0px;
+  color: black;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: 0px 0px;
+  font-size: 12pt;
+  margin-top: 0px;
+  border-left: 0px solid #DDDDDD;
+  background-color: trans;
+  margin-right: 0px;
+  font-family: sans-serif;
+  text-align: left;
+  width: 0px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-variant: normal;
+}
+#footer {
+  height: auto;
+  width: auto;
+  font-size: 8pt;
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  margin-bottom: 30px;
+  border-top: 0px solid black;
+  border-right: 0px solid #DDDDDD;
+  border-left: 0px solid #DDDDDD;
+  background-color: white;
+  background-image: none;
+  background-repeat: repeat;
+  background-position: 0px 0px;
+  border-bottom: 0px solid #DDDDDD;
+  color: black;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  font-family: sans-serif;
+  text-align: right;
+}
+
+    </style>
+  </head>
+  <body>
+    
+    <div id="main">
+      <div id="header">
+        
+  <div class="text_content content text_content" id="text_content_5474">
+  
+  <div class="tag">
+<p style="text-align: left;"><span style="font-size: xx-large;"><span style="font-family: &quot;Courier New&quot;;"><em><a href="http://s-t-i-f-f.com/pages/574-about.html.html">i</a>&nbsp;</em></span></span><em><span style="font-size: xx-large;"><span style="color: rgb(51, 102, 255);"><span style="font-family: &quot;Courier New&quot;;"><a href="javascript:location.href='mailto:'+String.fromCharCode(112,111,115,116,64,115,45,116,45,105,45,102,45,102,46,99,111,109)+'?'"><span style="color: rgb(0, 0, 255);">@</span></a>&nbsp;</span></span></span></em><span style="font-family: &quot;Courier New&quot;; font-size: xx-large;"><a href="http://s-t-i-f-f.com/pages/309-projekte.html">&lt;</a>&nbsp;</span><span style="color: rgb(255, 255, 255);"><em><span style="font-family: &quot;Courier New&quot;; font-size: xx-large;">ALL PROJECTS</span></em></span></p>
+<p style="text-align: left;">&nbsp;</p>
+</div>
+
+</div>
+<div class="text_content content text_content" id="text_content_5568">
+  
+  <div class="tag">
+<p><font face="Verdana" size="6">C L i E N T S</font></p>
+</div>
+
+</div>
+
+
+      </div>
+      <div id="sidebar_left">
+        
+   
+
+      </div>
+      <div id="sidebar_right">
+        
+   
+
+      </div>
+      <div id="content">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+  <div class="text_content content text_content" id="text_content_5745">
+  
+  <div class="tag">
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;D E S i G N &nbsp; and&nbsp; i N T E R i O R&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;E X H I B i T i O N &nbsp; D E S i G N&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;A R T &nbsp; P R O D U C T i O N&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128); min-height: 10px;"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><br />
+</span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128); min-height: 10px;"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><br />
+</span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Annika Kuhlmann - curator;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Anri Sala - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Ar/Ge Kunst,&nbsp;Bolzano - culture;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Avantgarde GmbH, M&uuml;nchen - event;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Balestra Berlin - light;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;BDA - Bund Deutscher Architekten, Berlin;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 129, 253);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Berliner Winter - drink;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 0, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Bj&ouml;rn Dahlem - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 0, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Blotto Design, Berlin - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 0, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Bo Christian Larsson - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;BStU - Der Bundesbeauftragte f&uuml;r die Stasiunterlagen - museum;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Bundesministerium f&uuml;r wirtschaftliche Zusammenarbeit und Entwicklung - ministry;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Camden Art Center, London - museum;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Camille Henrot - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Center For Optimism, Berlin - specialists;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Chantal Crousel, Paris - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Christian Lethert, K&ouml;ln - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Common Grounds e.V., Berlin - social, ecological;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Cora B&uuml;ttenbender, photographer;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Cyrill Lachauer - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Daniel Lergon - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;David Zink Yi - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;District, Berlin - exhibition;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Documenta GmbH, Kassel - exhibition;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;DrSmile - teeth;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Ehrliche Arbeit, Berlin - culture;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Emanuele Guidi - curator;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Esther Schipper Gallery, Berlin;&nbsp;<br />
+&nbsp;Fondazione Marconi, Milano - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Fondazione Prada, Milano - fashion;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Goethe Institut, New York - culture;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Gropius-Bau - museum;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Gruppe Lifestyle - specialists;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Haus der Kulturen der Welt - culture;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Hauser &amp; Wirth, London - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Hebbel am Ufer, Berlin - theatre;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Heidelberger Kunstverein - exhibition;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Heinrich-B&ouml;ll-Stiftung, Berlin - culture;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Ifa - Institut f&uuml;r Auslandsbeziehungen - culture;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Instituto Cervantes, Berlin - exhibtion;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Jean-Pascal Flavien - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Jeremy Shaw - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Joe Villion - illustration;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Jorinde Voigt - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Judith Raum - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Judy Radul - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Kader Attia - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Klara - communication;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Kunstverein Dresden - exhibition;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;KW Institute for Contemporary Art, Berlin;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Maaike Schoorel - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Maria Loboda - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Marian Goodman, New York - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Marrakech Biennale;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Museum of Contemporary Art, Department of Cleaning and Maintenance - shop;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Moritz Stumm - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Nathalie Djurberg - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Nagel Draxler, Berlin - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Null2 GmbH, Berlin - internet;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Pablo's Birthday, New York - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Prinzessinnen&nbsp;G&auml;rten, Berlin - gardening;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Prototypen - exhibition;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Robin Resch, coGalleries;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Saadane Afif - artist;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Sammlung Goetz, M&uuml;nchen - collection;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;SAVVY Contemporary, Berlin - exhibitioin;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Schinkel Pavillon, Berlin - exhibition;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;She She Pop, performance collective;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Sies+H&ouml;ke, D&uuml;sseldorf - gallery;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Soundfair, Berlin - music;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Stefan Kirchner, photographer;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Quentin Walesch - graphic;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(33, 255, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Susanne Weiss, Mukimaki - curator;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Th&uuml;ringer Ministerium f&uuml;r Wirtschaft, Wissenschaft und Digitale Gesellschaft - ministry;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Tom Holert - art historian;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Urban Catalyst Studio - architecture;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Whitechapel Gallery, London;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Waald Creative Group, Berlin;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;YSSO, Berlin - Magazin;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(251, 2, 128);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Zach Feuer Gallery, New York;&nbsp;</span></span></span></span></p>
+<p style="margin: 0px; font-stretch: normal; font-size: 8px; line-height: normal; font-family: Verdana; color: rgb(15, 128, 255);"><span style="font-size: x-large;"><span style="font-family: Verdana;"><span style="background-color: rgb(255, 255, 255);"><span style="font-kerning: none">&nbsp;Zalando - fashion;&nbsp;</span></span></span></span></p>
+</div>
+
+</div>
+
+
+        <br style="clear: both;" />
+      </div>
+      <div id="footer">
+        
+  <div class="text_content content text_content" id="text_content_5355">
+  
+  <div class="tag">
+<div style="text-align: left;">
+<div><a href="/pages/309-projekte.html.html"><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">A.L.L...</span></em><span style="font-family: &quot;Courier New&quot;;"><em><span style="font-size: x-large;">P.R</span></em></span><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">.</span></em><span style="font-family: &quot;Courier New&quot;;"><em><span style="font-size: x-large;">O</span></em></span><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">.</span></em><span style="font-family: &quot;Courier New&quot;;"><em><span style="font-size: x-large;">J</span></em></span><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">.</span></em><span style="font-family: &quot;Courier New&quot;;"><em><span style="font-size: x-large;">E</span></em></span><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">.</span></em><span style="font-family: &quot;Courier New&quot;;"><em><span style="font-size: x-large;">C</span></em></span><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">.</span></em><span style="font-family: &quot;Courier New&quot;;"><em><span style="font-size: x-large;">T</span></em></span><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">.</span></em><span style="font-family: &quot;Courier New&quot;;"><em><span style="font-size: x-large;">S</span></em></span><em style="font-family: &quot;Courier New&quot;;"><span style="font-size: x-large;">.</span></em></a></div>
+<hr />
+<div><em><span style="font-family: &quot;Courier New&quot;;"><a href="/pages/573-clients.html.html"><span style="font-size: x-large;">C.L.i.E.N.T.S.</span></a></span></em></div>
+<span id="1558020178356S" style="display: none;">&nbsp;</span><hr />
+<div><span style="font-size: x-large;"><em style="font-family: &quot;Courier New&quot;;"><a href="/pages/579-shop.html.html">S.H.O.P.</a></em></span></div>
+<hr />
+<p>&nbsp;</p>
+</div>
+</div>
+
+</div>
+<div class="image_content content image_content" id="image_content_5181">
+  
+  
+  
+  
+    
+  
+  <a href="http://www.s-t-i-f-f.com"><img alt="Visitenkarte_stiff_03_10" class="tag" src="/image_content/value/5181/VISITENKARTE_STIFF_03_10.png?1558523509" /></a>
+
+
+</div>
+<div class="text_content content text_content" id="text_content_5225">
+  
+  <div class="tag">
+<p style="margin: 0px 0px 6px; font-stretch: normal; line-height: normal; font-family: &quot;Courier New&quot;; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style="font-size: large;"> </span></p>
+<p><span style="font-size: large;"> </span></p>
+<p style="margin: 0px 0px 6px; font-stretch: normal; line-height: normal; font-family: &quot;Courier New&quot;; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style="font-size: x-large;"><span style="font-family: &quot;Courier New&quot;;"><span style="font-kerning: none">stiff.design</span></span></span></p>
+<p><span style="font-family: &quot;Courier New&quot;;"><span style="font-size: large;"><span style="-webkit-text-stroke-color: rgb(0, 0, 0); -webkit-text-stroke-width: initial;">Ganssauge &amp; Steininger GbR</span></span></span></p>
+<p><span style="font-size: large;"><span style="font-family: &quot;Courier New&quot;;"><span style="font-kerning: none">Herzbergstra&szlig;e 40-43<br />
+Fahrbereitschaft Haus 8<br />
+10365 Berlin &ndash; Lichtenberg</span></span></span></p>
+<p style="margin: 0px 0px 6px; font-stretch: normal; line-height: normal; font-family: &quot;Courier New&quot;; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style="font-size: large;"><span style="font-family: &quot;Courier New&quot;;"><span style="font-kerning: none">Gesellschafter</span></span></span></p>
+<p style="margin: 0px 0px 6px; font-stretch: normal; line-height: normal; font-family: &quot;Courier New&quot;; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style="font-size: large;"><span style="font-family: &quot;Courier New&quot;;"><span style="font-kerning: none">Dipl.-Ing. Architektur<br />
+Till-Moritz Ganssauge <br />
+0170 35 41 581</span></span></span></p>
+<p style="margin: 0px 0px 6px; font-stretch: normal; line-height: normal; font-family: &quot;Courier New&quot;; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style="font-size: large;"><span style="font-family: &quot;Courier New&quot;;"><span style="font-kerning: none">Dipl.-Ing. Architektur<br />
+Florentin Steininger<br />
+0179 87 84 396</span></span></span></p>
+<p><span style="font-size: large;"><span style="-webkit-font-kerning: none; -webkit-text-stroke-color: rgb(0, 0, 0);"><a href="mailto:post@s-t-i-f-f.com"><span style="color: rgb(0, 0, 255);"><span style="font-family: &quot;Courier New&quot;;"><span style="-webkit-font-kerning: none; -webkit-text-stroke-color: rgb(0, 0, 255);">post@s-t-i-f-f.com</span></span></span></a></span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: &quot;Courier New&quot;;"><span style="font-size: large;"><span class="s1">USt-IdNr.</span>DE282937409</span></span></p>
+<p><span style="font-family: &quot;Courier New&quot;;"><span style="font-size: large;">Content Managment:&nbsp;</span></span><span style="font-family: &quot;Courier New&quot;;"><span style="font-size: large;">S.T.I.F.F. GbR</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><span style="font-family: &quot;Courier New&quot;;">-<br />
+<span style="font-kerning: none">ALL</span>&nbsp;RIGHTS RESERVED&nbsp;<span style="font-kerning: none">&copy; S.T.I.F.F., 2019</span></span></span></p>
+<p><span style="font-family: &quot;Courier New&quot;; font-size: large;">Haftungshinweis:&nbsp;Trotz sorgf&auml;ltiger inhaltlicher Kontrolle &uuml;bernehmen wir keine Haftung f&uuml;r die Inhalte externer Links. F&uuml;r den Inhalt der verlinkten Seiten sind ausschlie&szlig;lich deren Betreiber verantwortlich.</span></p>
+</div>
+
+</div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
